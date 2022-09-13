@@ -27,4 +27,18 @@ class WeatherTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func dataModel(_ model: CitiesWeather) {
+        cityNameLabel.text = model.cityName
+        countryLabel.text = model.country
+        let url = URL(string: "https://openweathermap.org/img/wn/\(model.weatherImage)@2x.png")
+        DispatchQueue.global().async {
+            let data = try! Data(contentsOf: url!)
+            DispatchQueue.main.async {
+                self.weatherImage.image = UIImage(data: data)
+            }
+        }
+    
+        current_whyLabel.text = model.cityWhy
+        current_humidityLabel.text = model.current_humidity
+    }
 }
