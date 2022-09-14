@@ -53,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D333222128D1CEBE00AF9B5D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				D3C8151728D0D53A001991AC /* WeatherApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		D351D30828D0A77A00560944 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +80,7 @@
 		D351D31328D0A77A00560944 /* wanted_pre_onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				D333222128D1CEBE00AF9B5D /* Api */,
 				D351D32B28D0ADE800560944 /* Cell */,
 				D351D32A28D0ADCF00560944 /* Model */,
 				D351D32C28D0ADFE00560944 /* ViewController */,
@@ -81,7 +90,6 @@
 				D351D31D28D0A77B00560944 /* Assets.xcassets */,
 				D351D31F28D0A77B00560944 /* LaunchScreen.storyboard */,
 				D351D32228D0A77B00560944 /* Info.plist */,
-				D3C8151728D0D53A001991AC /* WeatherApi.swift */,
 			);
 			path = wanted_pre_onboarding;
 			sourceTree = "<group>";
