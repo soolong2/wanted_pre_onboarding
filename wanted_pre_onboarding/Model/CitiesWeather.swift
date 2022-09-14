@@ -9,8 +9,8 @@ import Foundation
 
 struct CitiesWeather {
     let country: String
-    let weatherImage: String
+    let weatherImage: String?
     let cityName: String
-    let current_humidity: String
-    let cityWhy: String
+    let current_humidity: Double
+    let current_temperature: String
 }
